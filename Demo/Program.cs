@@ -1,4 +1,5 @@
 
+using System.ComponentModel;
 using Demo.Context;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
@@ -13,7 +14,8 @@ namespace Demo
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+            .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
             builder.Services.AddDbContext<AppDbContext>(option =>
