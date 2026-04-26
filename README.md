@@ -73,6 +73,3 @@ This project was created for learning purposes to understand:
 
 Mohamed Salah
 
-## 👨‍💻 Author
-
-Mohamed Salah
