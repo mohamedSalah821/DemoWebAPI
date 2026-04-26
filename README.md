@@ -1,101 +1,77 @@
-# Demo API - 3 Layer Architecture 🧱
+# DemoWebAPI 🚀
 
-This project is a demo ASP.NET Core Web API built using **3-Layer Architecture** with implementation of **Unit of Work, Dependency Injection, and SOLID principles** to achieve clean, maintainable, and scalable backend design.
+This is a simple ASP.NET Core Web API project built for learning and practicing backend development concepts using C# and .NET.
 
 ---
 
 ## 🚀 Project Overview
 
-This project demonstrates how to structure a backend application using layered architecture to separate concerns and improve maintainability. It follows enterprise-style backend design principles commonly used in real-world applications.
+This project demonstrates how to build a RESTful API using ASP.NET Core Web API.  
+It focuses on understanding how controllers, services, and database communication work together in a backend system.
 
 ---
 
-## 🧱 Architecture Layers
+## 🧱 Project Structure
 
-### 1️⃣ Presentation Layer (API)
-Handles HTTP requests and responses, contains Controllers, and acts as the entry point of the system.
+The project is organized into a simple clean structure:
 
-### 2️⃣ Business Logic Layer (BLL)
-Contains business logic and rules, processes data before sending it to DAL, and acts as a bridge between API and DAL.
-
-### 3️⃣ Data Access Layer (DAL)
-Handles database operations using Entity Framework Core and implements repositories and Unit of Work.
-
----
-
-## 📁 Project Structure
-
-Demo-Api-3layer-architecture  
-├── API (Presentation Layer)  
-├── BLL (Business Logic Layer)  
-├── DAL (Data Access Layer)
+- Controllers → Handle HTTP requests
+- Models → Define data structure
+- Services (if used) → Business logic layer
+- Data Access → Database communication (if applicable)
 
 ---
 
 ## ⚙️ Technologies Used
 
-- ASP.NET Core Web API  
-- Entity Framework Core  
-- SQL Server  
+- ASP.NET Core Web API
 - C#
+- Entity Framework Core (if used)
+- SQL Server (if used)
 
 ---
 
-## 🔧 Design Patterns & Principles
+## 🔄 How It Works
 
-### Unit of Work Pattern
-Used to manage database transactions and coordinate multiple repositories as a single unit to ensure data consistency.
-
-### Dependency Injection (DI)
-Used to inject services and repositories into classes to achieve loose coupling and improve testability.
-
-### SOLID Principles
-Applied throughout the project to ensure clean architecture:
-- Single Responsibility Principle (SRP)
-- Open/Closed Principle (OCP)
-- Liskov Substitution Principle (LSP)
-- Interface Segregation Principle (ISP)
-- Dependency Inversion Principle (DIP)
-
----
-
-## 🔄 Application Flow
-
-Client Request → API Controller → Business Logic Layer (BLL) → Unit of Work (DAL) → Database  
-Response ← API Controller ← BLL ← DAL ← Database
+Client sends request → Controller receives request → Business logic executes → Data is processed → Response is returned to client
 
 ---
 
 ## 🎯 Key Features
 
-- Clean separation of concerns  
-- Scalable and maintainable structure  
-- Unit of Work implementation  
-- Dependency Injection usage  
-- SOLID principles applied  
-- Organized backend architecture  
+- RESTful API implementation
+- Clean controller structure
+- Basic CRUD operations (if included)
+- Separation of concerns concept
+- Learning-based backend architecture
 
 ---
 
 ## 🧠 Purpose of the Project
 
-This project was built for learning and practicing:
-- 3-Layer Architecture design  
-- Backend system structuring  
-- Unit of Work pattern  
-- Dependency Injection in ASP.NET Core  
-- SOLID principles in real applications  
+This project was created for learning purposes to understand:
+
+- How Web APIs work in ASP.NET Core
+- How to structure backend applications
+- How requests and responses flow
+- Basic backend development principles
 
 ---
 
 ## 📌 Notes
 
-- This is a learning/demo project  
-- Can be upgraded into Clean Architecture  
-- Can be extended with DTOs and AutoMapper  
-- Can support authentication (JWT) in future  
+- This is a learning/demo project
+- Can be improved with:
+  - DTOs
+  - Repository Pattern
+  - Service Layer
+  - Authentication (JWT)
+  - Clean Architecture
 
 ---
+## 👨‍💻 Author
+
+Mohamed Salah
 
 ## 👨‍💻 Author
 
